@@ -12,14 +12,13 @@ describe("Virtual DOM test. React Compoment, React Instance and React Element:",
       let component_1 = renderer.render(<TodoList/>);
       let component_2 = renderer.render(<TodoList/>);
       
-      //expect(component_1).toBe(component_2)
-      expect(component_1).toNotBe(component_2);
+      expect(component_1).toBe(component_2);
       
-      //expect(JSON.stringify(component_1)).toNotBe(JSON.stringify(component_2));
-      expect(JSON.stringify(component_1)).toBe(JSON.stringify(component_2));
+      expect(JSON.stringify(component_1)).toNotBe(JSON.stringify(component_2));
       
       //We don't use an assertion library because it would give you too much clues and we want you to think ;)
       //What is a Symbol? https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+      
       if ("Symbol(CHANGE THIS)" !== component_1['$$typeof'].toString()) {
         throw new Error("component_1['$$typeof'] value is not correct");
       }

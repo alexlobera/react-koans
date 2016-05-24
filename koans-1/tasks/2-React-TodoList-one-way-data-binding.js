@@ -51,10 +51,6 @@ class TodoList extends React.Component {
   }
 }
 
-const NewTaskButton = props => (
-  <button onClick={props.addTaskFunction} className='add-task'>Add new Product</button>
-)
-
 export const ListItem = props => (
     <li>
       {props.item.name}
