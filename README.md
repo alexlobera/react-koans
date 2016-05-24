@@ -12,7 +12,7 @@ This is a simple set of exercises to introduce some key concepts in React. The c
 Make sure you have Node.js installed.
 
   1. `git clone https://github.com/alexlbr/react-koans`
-  2. `cd ...`
+  2. `cd react-koans`
   3. `npm install`
 
 ##  Exerises
