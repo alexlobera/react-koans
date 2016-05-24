@@ -11,7 +11,7 @@ This is a simple set of exercises to introduce some key concepts in React. The c
 
 Make sure you have Node.js installed.
 
-  1. `git clone https://github.com/...`
+  1. `git clone https://github.com/alexlbr/react-koans`
   2. `cd ...`
   3. `npm install`
 
@@ -25,4 +25,4 @@ We have built some tests to check that you implement it correctly. To get starte
   
   `npm run test-koans-1`
   
-Then implement the tasks following the comments in koans-1/tasks/*. When it passes all the tests then do the same with `npm run test-koans-2`and koans-2/tasks/*
+Then implement the tasks following the comments in koans-1/tasks/* . When it passes all the tests then do the same with `npm run test-koans-2`and koans-2/tasks/*
