@@ -15,7 +15,7 @@ Make sure you have Node.js installed.
   2. `cd react-koans`
   3. `npm install`
 
-##  Exerises
+##  Exercises
 
 You will learn by doing. You will have to implement some code following the comments in these files:
   - koans-1/tasks/*
