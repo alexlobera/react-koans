@@ -1,10 +1,7 @@
 import TodoList,{ListItem} from '../../koans-1/tasks/2-React-TodoList-one-way-data-binding.js';
 import React from "react";
-import ReactDOM from "react-dom";
-import expect from "expect";
-import expectJSX from "expect-jsx";
 import TestUtils from "react-addons-test-utils";
-import jsdomSetup from "../../test/jsdom-setup";
+import { expect } from "chai";
 
 describe("Virtual DOM test. React Compoment, React Instance and React Element:", () => {
   it("A React Element is an inmutable object. The virtual DOM is a tree of React Elements. TestUtils.createRenderer() returns a React Element.", () => {
