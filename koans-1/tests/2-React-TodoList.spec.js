@@ -1,6 +1,5 @@
 import React from "react";
 import TodoList from '../tasks/2-React-TodoList-one-way-data-binding.js';
-import {ListItem} from '../tasks/2-React-TodoList-one-way-data-binding.js';
 import { expect } from "chai";
 import { mount } from 'enzyme';
 

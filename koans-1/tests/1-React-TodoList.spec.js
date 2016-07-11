@@ -1,4 +1,3 @@
-/*
 import TodoList from '../tasks/1-React-TodoList-props-and-state.js';
 import {ListItem} from '../tasks/1-React-TodoList-props-and-state.js';
 import React from "react";
@@ -34,4 +33,3 @@ describe("Create a ToDo List. A React intro to state and props", () => {
     });
   });
 });
-*/

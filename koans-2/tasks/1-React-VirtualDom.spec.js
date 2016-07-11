@@ -1,39 +1,52 @@
 import TodoList,{ListItem} from '../../koans-1/tasks/2-React-TodoList-one-way-data-binding.js';
 import React from "react";
+import ReactDOM from "react-dom";
 import TestUtils from "react-addons-test-utils";
 import { expect } from "chai";
 
 describe("Virtual DOM test. React Compoment, React Instance and React Element:", () => {
-  it("A React Element is an inmutable object. The virtual DOM is a tree of React Elements. TestUtils.createRenderer() returns a React Element.", () => {
-      const renderer = TestUtils.createRenderer();
-      let component_1 = renderer.render(<TodoList/>);
-      let component_2 = renderer.render(<TodoList/>);
+  
+  it("JsX creates React Elements.", () => {
+      let am_I_a_component = <TodoList/>;
       
-      expect(component_1).toBe(component_2);
-      
-      expect(JSON.stringify(component_1)).toNotBe(JSON.stringify(component_2));
-      
-      //We don't use an assertion library because it would give you too much clues and we want you to think ;)
-      //What is a Symbol? https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol
-      
-      if ("Symbol(CHANGE THIS)" !== component_1['$$typeof'].toString()) {
-        throw new Error("component_1['$$typeof'] value is not correct");
+      // assertion 1
+      let change_me = 'WHAT TYPE AM I?';
+      //using an assertion library would give you many clues about the problem, it woudl be too easy, that's why we are throwing an Error instead
+      if (`Symbol(${change_me})` !== am_I_a_component['$$typeof'].toString()) {
+        throw new Error("Assertion 3. am_I_a_component['$$typeof'] value is not correct");
       }
+
+      // assertion 2
+      if ('???' == typeof am_I_a_component) {
+        throw new Error("Assertion 4. The typeof am_I_a_component value is not correct");
+      }
+  });
+
+  it("JsX creates new objects every time.", () => {
+      let component_1 = <TodoList/>;
+      let component_2 = <TodoList/>;
       
-      if ("CHANGE THIS" !== typeof(component_2)) {
-        throw new Error("The typeof(component_2) value is not correct");
+      // assertion 1
+      expect(component_1).not.to.be.deep.equal(component_2);
+      
+      // assertion 2
+      expect(component_1).to.be.equal(component_2);
+  });
+
+  it("React Elements do not implement component's functionality.", () => {
+      let reactElement = <TodoList/>;
+      if ('CHANGE THIS' !== typeof reactElement.addTask) {
+        throw new Error("The typeof(reactElement.addTask) is not correct");
       }
   });
   
-  it("React Elements do not implement any functionality.", () => {
-      const renderer = TestUtils.createRenderer();
-      let reactElement = renderer.render(<TodoList/>);
-      
-      if ("CHANGE THIS" !== typeof(reactElement.addItem)) {
-        throw new Error("The typeof(reactElement.addItem) is not correct");
+  it("Rendering into the document should return a React Instance.", () => {
+      let component = TestUtils.renderIntoDocument(<TodoList/>);
+      if ('CHANGE THIS' !== typeof component.addTask) {
+        throw new Error("The typeof(reactElement.addTask) is not correct");
       }
   });
-  
+
   it("TestUtils.renderIntoDocument should return a detached React Instance.", () => {
       let detachedComp_1 = TestUtils.renderIntoDocument(<TodoList/>);
       let detachedComp_2 = TestUtils.renderIntoDocument(<TodoList/>);
@@ -43,21 +56,12 @@ describe("Virtual DOM test. React Compoment, React Instance and React Element:",
       }
   });
   
-  it("ReactDOM.render(...) should return the same React Instance for the same component (they are not detached).", () => {
+  it("ReactDOM.render should return the same React Instance for the same component (they are not detached).", () => {
       let component_1 = ReactDOM.render(<TodoList/>, document.getElementById('app'));
       let component_2 = ReactDOM.render(<TodoList/>, document.getElementById('app'));
       
-      //Yes you've learnt that the verbose of the assertion library when there is an exception is quite useless
-      //We'll show you how to avoid this in another koan
-      expect(component_1).toNotBe(component_2);
-  });
-  
-  it("A 'React Instance' is an instance of a React Component and so it has the component's functionality.", () => {
-      
-      let component = ReactDOM.render(<TodoList/>, document.getElementById('app'));
-      
-      if ("CHANGE THIS" !== typeof(component.addItem)) {
-        throw new Error("The typeof(component.addItem) is not correct");
+      if (component_1 === component_2) {
+        throw new Error("Are you sure component_1 and component_2 are the same instance?");
       }
   });
 });

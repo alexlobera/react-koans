@@ -6,6 +6,7 @@
   "scripts": {
     "test-koans-1": "mocha './koans-1/**/*.spec.js' --compilers js:babel-core/register --require ./test/jsdom-setup.js",
     "test-koans-2": "mocha './koans-2/**/*.spec.js' --compilers js:babel-core/register --require ./test/jsdom-setup.js",
+    "test-koans-3": "mocha './koans-3/**/*.spec.js' --compilers js:babel-core/register --require ./test/jsdom-setup.js",
     "test": "mocha './**/*.spec.js' --compilers js:babel-core/register",
     "test:watch": "npm test -- --watch"
   },
