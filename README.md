@@ -9,7 +9,7 @@ This is a simple set of exercises to introduce some React key concepts. The conc
   - React Instance
   - React Element
 
-Your are also going to practise testing with React using:
+You are also going to practise testing with React using:
   - Mocha
   - Chai
   - Sinon
