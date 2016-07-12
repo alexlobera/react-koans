@@ -22,9 +22,11 @@
     "babel-preset-react": "^6.5.0",
     "chai": "^3.5.0",
     "enzyme": "^2.4.1",
+    "jest": "^13.2.3",
     "jsdom": "^9.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.2",
+    "sinon": "^1.17.4",
     "webpack": "^1.13.0"
   },
   "dependencies": {

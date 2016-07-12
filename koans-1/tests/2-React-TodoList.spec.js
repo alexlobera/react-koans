@@ -25,6 +25,7 @@ describe("ToDo List. A React intro to one-way data-binding ", () => {
       todoListWrapper.find('button').simulate('click');
       expect(todoListWrapper.find('ul li')).to.be.length(2);
     });
+    
     it('Should be the name for the task and for the input', () => {
       const newTask = "Learn more advance JavaScript too!";
       todoListWrapper.find('input').get(0).value = newTask;
