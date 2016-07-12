@@ -2,12 +2,20 @@
 
 For questions please join [![Gitter](https://badges.gitter.im/hackages/hackjam-react.svg)](https://gitter.im/alexlbr/react-koans?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-This is a simple set of exercises to introduce some key concepts in React. The concepts your are going to learn are:
+This is a simple set of exercises to introduce some React key concepts. The concepts your are going to learn are:
   - Props
   - State
   - React Component
   - React Instance
   - React Element
+
+Your are also going to practise testing with React using:
+  - Mocha
+  - Chai
+  - Sinon
+  - Enzyme
+  - Jsdom
+  - React Test Utilities
   
 ## Installation
 
