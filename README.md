@@ -1,5 +1,7 @@
 # React Koans
 
+[![Join the chat at https://gitter.im/alexlbr/react-koans](https://badges.gitter.im/alexlbr/react-koans.svg)](https://gitter.im/alexlbr/react-koans?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is a simple set of exercises to introduce some key concepts in React. The concepts your are going to learn are:
   - Props
   - State
