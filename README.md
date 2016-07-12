@@ -1,5 +1,7 @@
 # React Koans
 
+For questions please join [![Gitter](https://badges.gitter.im/hackages/hackjam-react.svg)](https://gitter.im/alexlbr/react-koans?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 This is a simple set of exercises to introduce some key concepts in React. The concepts your are going to learn are:
   - Props
   - State
@@ -20,6 +22,7 @@ Make sure you have Node.js installed.
 You will learn by doing. You will have to implement some code following the comments in these files:
   - koans-1/tasks/*
   - koans-2/tasks/*
+  - koans-3/tasks/*
   
 We have built some tests to check that you implement it correctly. To get started first run:
   
