@@ -7,7 +7,7 @@ import { mount } from 'enzyme';
 describe("Create a ToDo List. A React intro to state and props", () => {
 
   describe("Task #1 - display a list of tasks", () => {
-
+    
     const todoListWrapper = mount(<TodoList/>);
 
     it('The component should start with a ul tag elementsss', () => {
