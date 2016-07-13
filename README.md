@@ -1,5 +1,7 @@
 # React Koans
 
+What are [koans](https://github.com/alexlbr/react-koans)?
+
 For questions please join [![Gitter](https://badges.gitter.im/hackages/hackjam-react.svg)](https://gitter.im/alexlbr/react-koans?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 This is a simple set of exercises to introduce some React key concepts. The concepts your are going to learn are:
@@ -9,7 +11,7 @@ This is a simple set of exercises to introduce some React key concepts. The conc
   - React Instance
   - React Element
 
-You are also going to practise testing with React using:
+You are also going to practise unit testing with React using:
   - Mocha
   - Chai
   - Sinon
@@ -27,13 +29,24 @@ Make sure you have Node.js installed.
 
 ##  Exercises
 
-You will learn by doing. You will have to implement some code following the comments in these files:
-  - koans-1/tasks/*
-  - koans-2/tasks/*
-  - koans-3/tasks/*
-  
-We have built some tests to check that you implement it correctly. To get started first run:
-  
-  `npm run test-koans-1`
-  
-Then implement the tasks following the comments in koans-1/tasks/* . When it passes all the tests then do the same with `npm run test-koans-2`and koans-2/tasks/*
+### Koans 1:
+
+run `npm run test-koans-1`
+
+Tests will tell you there are some errors. You need to fix them by editing these 2 files:
+ - koans-1/tasks/1-React-TodoList-props-and-state.js
+ - koans-1/tasks/1-React-TodoList-one-way-data-binding.js
+
+### Koans 2:
+
+run `npm run test-koans-2`
+
+Tests of Koans 2 are broken, you need to fix the tests by editing this file:
+ - koans-2/tasks/1-React-VirtualDom.spec.js
+
+### Koans 3:
+
+run `npm run test-koans-3`
+
+Tests of Koans 3 are broken, you need to fix the tests by editing this file:
+ - koans-3/tasks/app.spec.js
