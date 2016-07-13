@@ -31,7 +31,7 @@ Make sure you have Node.js installed.
 
 ### Koans 1:
 
-run `npm run test-koans-1`
+Execute in your console: `npm run test-koans-1`
 
 Tests will tell you there are some errors. You need to fix them by editing these 2 files:
  - koans-1/tasks/1-React-TodoList-props-and-state.js
@@ -39,14 +39,14 @@ Tests will tell you there are some errors. You need to fix them by editing these
 
 ### Koans 2:
 
-run `npm run test-koans-2`
+Execute in your console: `npm run test-koans-2`
 
 Tests of Koans 2 are broken, you need to fix the tests by editing this file:
  - koans-2/tasks/1-React-VirtualDom.spec.js
 
 ### Koans 3:
 
-run `npm run test-koans-3`
+Execute in your console: `npm run test-koans-3`
 
 Tests of Koans 3 are broken, you need to fix the tests by editing this file:
  - koans-3/tasks/app.spec.js
